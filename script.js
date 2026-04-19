@@ -238,6 +238,10 @@ document.addEventListener('DOMContentLoaded', init);
 // ================= 多语言支持 (i18next) =================
 
 // 初始化 i18next
+const setHtmlLang = (lang) => {
+    document.documentElement.lang = lang === 'zh' ? 'zh-CN' : (lang === 'ja' ? 'ja-JP' : 'en-US');
+};
+
 const initI18n = async () => {
     // 检查 i18next 是否已加载
     if (typeof i18next === 'undefined') {
@@ -246,7 +250,10 @@ const initI18n = async () => {
     }
 
     // 从 localStorage 获取保存的语言，默认为中文
-    const savedLang = localStorage.getItem('language') || 'zh';
+    let savedLang = localStorage.getItem('language') || 'zh';
+    if (!['zh', 'en', 'ja'].includes(savedLang)) {
+        savedLang = 'zh';
+    }
     console.log('Initializing i18next with language:', savedLang);
 
     try {
@@ -262,7 +269,8 @@ const initI18n = async () => {
             });
 
         console.log('i18next initialized successfully, current language:', i18next.language);
-        
+        setHtmlLang(i18next.language);
+
         // 更新页面内容
         updateContent();
     } catch (error) {
@@ -272,13 +280,8 @@ const initI18n = async () => {
 
 // 更新页面内容
 const updateContent = () => {
-    console.log('Updating content with language:', i18next.language);
-    
     // 更新所有带 data-i18n 属性的元素
-    const elements = selectAll('[data-i18n]');
-    console.log('Found', elements.length, 'elements with data-i18n');
-    
-    elements.forEach(element => {
+    selectAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         const translation = i18next.t(key);
         
@@ -316,6 +319,7 @@ const initLanguageSwitcher = () => {
             btn.classList.remove('active');
         }
     });
+    setHtmlLang(currentLang);
     
     // 添加点击事件
     langButtons.forEach(btn => {

@@ -292,8 +292,10 @@ const initLanguageSwitcher = () => {
     
     if (langButtons.length === 0) return;
     
+    // 从 localStorage 获取当前语言，确保与 i18next 一致
+    const currentLang = localStorage.getItem('language') || i18next.language || 'zh';
+    
     // 设置当前激活的语言按钮
-    const currentLang = i18next.language || 'zh';
     langButtons.forEach(btn => {
         const lang = btn.getAttribute('data-lang');
         if (lang === currentLang) {

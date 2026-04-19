@@ -24,11 +24,18 @@
             </div>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html">首页</a></li>
-            <li class="active"><a href="products.html">产品中心</a></li>
-            <li><a href="about.html">关于我们</a></li>
-            <li><a href="contact.html">联系我们</a></li>
+            <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+            <li class="active"><a href="products.html" data-i18n="nav.products">产品中心</a></li>
+            <li><a href="about.html" data-i18n="nav.about">关于我们</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li>
         </ul>
+        
+        <!-- 语言切换 -->
+        <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="zh">中文</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="ja">日本語</button>
+        </div>
     </nav>
 
     <!-- 产品中心 - 美团式布局 -->
@@ -36,32 +43,32 @@
         <!-- 左侧导航 -->
         <aside class="products-sidebar">
             <div class="sidebar-header">
-                <h3>产品系列</h3>
+                <h3 data-i18n="productsPage.sidebarTitle">产品系列</h3>
             </div>
             <nav class="category-nav">
                 <a href="#cotton" class="category-item active" data-category="cotton">
                     <!-- <span class="category-icon">🌿</span> -->
-                    <span class="category-name">纯棉系列</span>
+                    <span class="category-name" data-i18n="productsPage.cotton">纯棉系列</span>
                     <span class="category-count">3款</span>
                 </a>
                 <a href="#linen" class="category-item" data-category="linen">
                     <!-- <span class="category-icon">🍃</span> -->
-                    <span class="category-name">亚麻系列</span>
+                    <span class="category-name" data-i18n="productsPage.linen">亚麻系列</span>
                     <span class="category-count">3款</span>
                 </a>
                 <a href="#stretch" class="category-item" data-category="stretch">
                     <!-- <span class="category-icon">💪</span> -->
-                    <span class="category-name">弹力系列</span>
+                    <span class="category-name" data-i18n="productsPage.stretch">弹力系列</span>
                     <span class="category-count">3款</span>
                 </a>
                 <a href="#twill" class="category-item" data-category="twill">
                     <!-- <span class="category-icon">📐</span> -->
-                    <span class="category-name">斜纹系列</span>
+                    <span class="category-name" data-i18n="productsPage.twill">斜纹系列</span>
                     <span class="category-count">3款</span>
                 </a>
                 <a href="#cote" class="category-item" data-category="cote">
                     <!-- <span class="category-icon">✨</span> -->
-                    <span class="category-name">可特系列</span>
+                    <span class="category-name" data-i18n="productsPage.cote">可特系列</span>
                     <span class="category-count">3款</span>
                 </a>
             </nav>
@@ -72,8 +79,8 @@
             <!-- 纯棉系列 -->
             <section id="cotton" class="product-category">
                 <div class="category-header">
-                    <h2>纯棉系列</h2>
-                    <p class="category-desc">天然舒适，透气吸汗，适合贴身衣物与日常服饰</p>
+                    <h2 data-i18n="productsPage.cotton">纯棉系列</h2>
+                    <p class="category-desc" data-i18n="productsPage.cottonDesc">天然舒适，透气吸汗，适合贴身衣物与日常服饰</p>
                 </div>
                 <div class="product-grid-meituan">
                     <div class="product-card-meituan">
@@ -438,8 +445,8 @@
     <section class="product-features section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-label">产品特性</h2>
-                <p class="section-desc">品质保证</p>
+                <h2 class="section-label" data-i18n="productsPage.featuresLabel">产品特性</h2>
+                <p class="section-desc" data-i18n="productsPage.featuresDesc">品质保证</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
@@ -449,8 +456,8 @@
                             <path d="M20 30 L27 37 L40 24" fill="none" stroke="#6b5d52" stroke-width="2"/>
                         </svg>
                     </div>
-                    <h4>优质原料</h4>
-                    <p>精选全球优质原材料，从源头保证产品品质</p>
+                    <h4 data-i18n="productsPage.feature1Title">优质原料</h4>
+                    <p data-i18n="productsPage.feature1Desc">精选全球优质原材料，从源头保证产品品质</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -461,8 +468,8 @@
                             <line x1="22" y1="35" x2="38" y2="35" stroke="#6b5d52" stroke-width="1"/>
                         </svg>
                     </div>
-                    <h4>精湛工艺</h4>
-                    <p>采用先进生产工艺，每一道工序都精益求精</p>
+                    <h4 data-i18n="productsPage.feature2Title">精湛工艺</h4>
+                    <p data-i18n="productsPage.feature2Desc">采用先进生产工艺，每一道工序都精益求精</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -472,8 +479,8 @@
                             <circle cx="30" cy="30" r="4" fill="#6b5d52"/>
                         </svg>
                     </div>
-                    <h4>色彩丰富</h4>
-                    <p>1000+色彩选择，满足您的个性化需求</p>
+                    <h4 data-i18n="productsPage.feature3Title">色彩丰富</h4>
+                    <p data-i18n="productsPage.feature3Desc">1000+色彩选择，满足您的个性化需求</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -482,8 +489,8 @@
                             <line x1="22" y1="35" x2="38" y2="35" stroke="#6b5d52" stroke-width="1.5"/>
                         </svg>
                     </div>
-                    <h4>环保理念</h4>
-                    <p>坚持可持续发展，使用环保染料和工艺</p>
+                    <h4 data-i18n="productsPage.feature4Title">环保理念</h4>
+                    <p data-i18n="productsPage.feature4Desc">坚持可持续发展，使用环保染料和工艺</p>
                 </div>
             </div>
         </div>
@@ -491,8 +498,8 @@
 
     <footer>
         <div class="footer-content">
-            <p>© 2026 米晴纺织 版权所有</p>
-            <p class="footer-tagline">匠心织造 · 面料世家</p>
+            <p data-i18n="footer.copyright">© 2026 米晴纺织 版权所有</p>
+            <p class="footer-tagline" data-i18n="footer.tagline">匠心织造 · 面料世家</p>
         </div>
     </footer>
     </footer>
@@ -504,16 +511,18 @@
                 <path d="M8.5 5C4.9 5 2 7.5 2 10.6c0 1.8 1 3.4 2.6 4.4l-.6 2 2.2-1.1c.6.1 1.2.2 1.8.2 3.6 0 6.5-2.5 6.5-5.6S12.1 5 8.5 5zm-1 7.5c-.4 0-.8-.3-.8-.8s.3-.8.8-.8.8.3.8.8-.4.8-.8.8zm3.5 0c-.4 0-.8-.3-.8-.8s.3-.8.8-.8.8.3.8.8-.4.8-.8.8z"/>
                 <path d="M21.5 13.2c0-2.8-2.6-5-5.8-5-3.5 0-6.3 2.5-6.3 5.6 0 3.1 2.8 5.6 6.3 5.6.5 0 1-.1 1.5-.2l1.8.9-.5-1.7c1.3-.9 2.1-2.3 2.1-3.9zm-7.5.3c-.3 0-.6-.3-.6-.6s.3-.6.6-.6.6.3.6.6-.3.6-.6.6zm3 0c-.3 0-.6-.3-.6-.6s.3-.6.6-.6.6.3.6.6-.3.6-.6.6z"/>
             </svg>
-            <span>添加微信</span>
+            <span data-i18n="wechat.button">添加微信</span>
         </button>
         <div class="wechat-qrcode">
             <div class="qrcode-content">
                 <img src="images/wechat-qr.png" alt="微信二维码" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect width=%22200%22 height=%22200%22 fill=%22%23f0f0f0%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23999%22 font-size=%2214%22%3E请上传二维码%3C/text%3E%3C/svg%3E'">
-                <p>扫码添加微信</p>
+                <p data-i18n="wechat.scan">扫码添加微信</p>
             </div>
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/i18next@23.7.6/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.4.2/i18nextHttpBackend.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -277,6 +277,13 @@ const updateContent = () => {
             element.textContent = translation;
         }
     });
+    
+    // 更新所有带 data-i18n-placeholder 属性的元素
+    selectAll('[data-i18n-placeholder]').forEach(element => {
+        const key = element.getAttribute('data-i18n-placeholder');
+        const translation = i18next.t(key);
+        element.placeholder = translation;
+    });
 };
 
 // 初始化语言切换按钮

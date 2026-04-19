@@ -1,4 +1,8 @@
 {
+  "common": {
+    "companyName": "米晴纺织",
+    "slogan": "至臻品质 匠心理布"
+  },
   "nav": {
     "home": "首页",
     "products": "产品中心",
@@ -70,5 +74,71 @@
   "wechat": {
     "button": "添加微信",
     "scan": "扫码添加微信"
+  },
+  "about": {
+    "pageTitle": "关于我们",
+    "pageDesc": "了解米晴纺织",
+    "brandLabel": "品牌理念",
+    "brandTitle": "让每一件衣服<br>都拥有更好的灵魂",
+    "storyLabel": "企业历程",
+    "storyDesc": "我们的故事",
+    "story2018Title": "创立之初",
+    "story2018Desc": "怀揣着对纺织行业的热爱，我们在这一年正式成立，开始了面料品质的追求之旅。",
+    "story2020Title": "技术突破",
+    "story2020Desc": "引进先进生产设备，建立完善的质量管理体系，产品质量获得行业认可。",
+    "story2021Title": "市场拓展",
+    "story2021Desc": "与800+品牌建立合作关系，产品远销海内外，成为行业知名供应商。",
+    "story2026Title": "持续创新",
+    "story2026Desc": "不断研发新型面料，追求环保与品质的完美结合，引领行业发展方向。",
+    "statsArea": "仓储面积(m²)"
+  },
+  "contact": {
+    "pageTitle": "联系我们",
+    "pageDesc": "期待与您合作",
+    "sectionLabel": "联系我们",
+    "sectionDesc": "欢迎留言，我们会尽快回复",
+    "intro": "欢迎咨询面料、定制和合作事宜，我们会在24小时内给您回复。",
+    "labelContact": "联系人",
+    "labelPhone": "电话",
+    "labelEmail": "邮箱",
+    "labelAddress": "地址",
+    "valueContact": "屈经理",
+    "valuePhone": "+86 138 0000 0000",
+    "valueEmail": "info@mrtextile.com",
+    "valueAddress": "江苏省苏州市吴江区盛泽镇德尔金色摩纺12幢106—107号",
+    "formName": "姓名",
+    "formPhone": "电话",
+    "formEmail": "邮箱",
+    "formMessage": "留言内容",
+    "formNamePlaceholder": "请输入您的姓名",
+    "formPhonePlaceholder": "请输入联系电话",
+    "formEmailPlaceholder": "请输入邮箱地址",
+    "formMessagePlaceholder": "请描述您的需求",
+    "formSubmit": "发送留言"
+  },
+  "productsPage": {
+    "sidebarTitle": "产品系列",
+    "cotton": "纯棉系列",
+    "linen": "亚麻系列",
+    "stretch": "弹力系列",
+    "twill": "斜纹系列",
+    "cote": "可特系列",
+    "cottonDesc": "天然舒适，透气吸汗，适合贴身衣物与日常服饰",
+    "linenDesc": "自然纹理，透气清爽，适合夏季服装与文艺风格",
+    "stretchDesc": "高弹性能，贴合身形，适合运动与休闲装",
+    "twillDesc": "立体纹理，质感出众，适合正装与高端服饰",
+    "coteDesc": "创新面料，功能性强，适合特殊场景与高性能服装",
+    "inquiry": "咨询",
+    "priceLabel": "参考价",
+    "featuresLabel": "产品特性",
+    "featuresDesc": "品质保证",
+    "feature1Title": "优质原料",
+    "feature1Desc": "精选全球优质原材料，从源头保证产品品质",
+    "feature2Title": "精湛工艺",
+    "feature2Desc": "采用先进生产工艺，每一道工序都精益求精",
+    "feature3Title": "色彩丰富",
+    "feature3Desc": "1000+色彩选择，满足您的个性化需求",
+    "feature4Title": "环保理念",
+    "feature4Desc": "坚持可持续发展，使用环保染料和工艺"
   }
 }

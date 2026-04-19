@@ -1,4 +1,8 @@
 {
+  "common": {
+    "companyName": "米晴紡織",
+    "slogan": "至高の品質 · 匠の心で織る"
+  },
   "nav": {
     "home": "ホーム",
     "products": "製品",
@@ -70,5 +74,71 @@
   "wechat": {
     "button": "WeChatを追加",
     "scan": "スキャンしてWeChatを追加"
+  },
+  "about": {
+    "pageTitle": "会社概要",
+    "pageDesc": "米晴紡織について",
+    "brandLabel": "ブランド理念",
+    "brandTitle": "すべての衣服に<br>より良い魂を",
+    "storyLabel": "企業の歩み",
+    "storyDesc": "私たちの物語",
+    "story2018Title": "創立",
+    "story2018Desc": "繊維業界への情熱を胸に、この年に正式に設立し、生地品質の追求の旅を始めました。",
+    "story2020Title": "技術革新",
+    "story2020Desc": "先進的な生産設備を導入し、完全な品質管理システムを確立、製品品質が業界で認められました。",
+    "story2021Title": "市場拡大",
+    "story2021Desc": "800以上のブランドと提携関係を構築、製品は国内外に販売され、業界の有名サプライヤーとなりました。",
+    "story2026Title": "継続的革新",
+    "story2026Desc": "新型生地の研究開発を続け、環境保護と品質の完璧な組み合わせを追求し、業界の発展をリードしています。",
+    "statsArea": "倉庫面積(m²)"
+  },
+  "contact": {
+    "pageTitle": "お問い合わせ",
+    "pageDesc": "ご協力をお待ちしております",
+    "sectionLabel": "お問い合わせ",
+    "sectionDesc": "お気軽にメッセージをお送りください、できるだけ早く返信いたします",
+    "intro": "生地、カスタマイズ、提携についてお気軽にお問い合わせください。24時間以内に返信いたします。",
+    "labelContact": "担当者",
+    "labelPhone": "電話",
+    "labelEmail": "メール",
+    "labelAddress": "住所",
+    "valueContact": "屈マネージャー",
+    "valuePhone": "+86 138 0000 0000",
+    "valueEmail": "info@mrtextile.com",
+    "valueAddress": "江蘇省蘇州市呉江区盛沢鎮デル金色摩紡12棟106-107号",
+    "formName": "お名前",
+    "formPhone": "電話番号",
+    "formEmail": "メールアドレス",
+    "formMessage": "メッセージ",
+    "formNamePlaceholder": "お名前を入力してください",
+    "formPhonePlaceholder": "電話番号を入力してください",
+    "formEmailPlaceholder": "メールアドレスを入力してください",
+    "formMessagePlaceholder": "ご要望を記入してください",
+    "formSubmit": "送信"
+  },
+  "productsPage": {
+    "sidebarTitle": "製品シリーズ",
+    "cotton": "純綿シリーズ",
+    "linen": "リネンシリーズ",
+    "stretch": "ストレッチシリーズ",
+    "twill": "ツイルシリーズ",
+    "cote": "コートシリーズ",
+    "cottonDesc": "天然の快適さ、通気性と吸汗性、肌着や日常着に適しています",
+    "linenDesc": "自然な質感、通気性と爽やかさ、夏服や文芸スタイルに適しています",
+    "stretchDesc": "高い弾力性、体にフィット、スポーツウェアやカジュアルウェアに適しています",
+    "twillDesc": "立体的な質感、優れた品質、フォーマルウェアや高級服に適しています",
+    "coteDesc": "革新的な生地、高機能、特殊なシーンや高性能服に適しています",
+    "inquiry": "お問い合わせ",
+    "priceLabel": "参考価格",
+    "featuresLabel": "製品特性",
+    "featuresDesc": "品質保証",
+    "feature1Title": "優良原料",
+    "feature1Desc": "世界中の優良原材料を厳選、源から製品品質を保証",
+    "feature2Title": "精巧な工芸",
+    "feature2Desc": "先進的な生産工芸を採用、すべての工程を精密に",
+    "feature3Title": "豊富なカラー",
+    "feature3Desc": "1000以上のカラーオプション、個性的なニーズに対応",
+    "feature4Title": "環境理念",
+    "feature4Desc": "持続可能な発展を堅持、環境に優しい染料と工芸を使用"
   }
 }

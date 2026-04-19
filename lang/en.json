@@ -1,4 +1,8 @@
 {
+  "common": {
+    "companyName": "MiQing Textile",
+    "slogan": "Premium Quality · Crafted with Care"
+  },
   "nav": {
     "home": "Home",
     "products": "Products",
@@ -70,5 +74,71 @@
   "wechat": {
     "button": "Add WeChat",
     "scan": "Scan to add WeChat"
+  },
+  "about": {
+    "pageTitle": "About Us",
+    "pageDesc": "Learn About MiQing Textile",
+    "brandLabel": "Brand Message",
+    "brandTitle": "Giving Every Garment<br>A Better Soul",
+    "storyLabel": "Our Journey",
+    "storyDesc": "Our Story",
+    "story2018Title": "Foundation",
+    "story2018Desc": "With passion for the textile industry, we officially established and began our journey pursuing fabric quality.",
+    "story2020Title": "Technical Breakthrough",
+    "story2020Desc": "Introduced advanced production equipment, established comprehensive quality management system, gained industry recognition.",
+    "story2021Title": "Market Expansion",
+    "story2021Desc": "Established partnerships with 800+ brands, products sold globally, became renowned industry supplier.",
+    "story2026Title": "Continuous Innovation",
+    "story2026Desc": "Continuously developing new fabrics, pursuing perfect combination of sustainability and quality, leading industry development.",
+    "statsArea": "Storage Area (m²)"
+  },
+  "contact": {
+    "pageTitle": "Contact Us",
+    "pageDesc": "Looking Forward to Working with You",
+    "sectionLabel": "Contact Us",
+    "sectionDesc": "Welcome to leave a message, we will reply as soon as possible",
+    "intro": "Welcome to inquire about fabrics, customization and cooperation. We will reply within 24 hours.",
+    "labelContact": "Contact",
+    "labelPhone": "Phone",
+    "labelEmail": "Email",
+    "labelAddress": "Address",
+    "valueContact": "Manager Qu",
+    "valuePhone": "+86 138 0000 0000",
+    "valueEmail": "info@mrtextile.com",
+    "valueAddress": "Room 106-107, Building 12, Del Golden Textile, Shengze Town, Wujiang District, Suzhou, Jiangsu",
+    "formName": "Name",
+    "formPhone": "Phone",
+    "formEmail": "Email",
+    "formMessage": "Message",
+    "formNamePlaceholder": "Please enter your name",
+    "formPhonePlaceholder": "Please enter your phone number",
+    "formEmailPlaceholder": "Please enter your email",
+    "formMessagePlaceholder": "Please describe your needs",
+    "formSubmit": "Send Message"
+  },
+  "productsPage": {
+    "sidebarTitle": "Product Series",
+    "cotton": "Cotton Series",
+    "linen": "Linen Series",
+    "stretch": "Stretch Series",
+    "twill": "Twill Series",
+    "cote": "Cote Series",
+    "cottonDesc": "Natural comfort, breathable and absorbent, suitable for intimate apparel and daily wear",
+    "linenDesc": "Natural texture, breathable and fresh, suitable for summer clothing and artistic style",
+    "stretchDesc": "High elasticity, body-fitting, suitable for sports and casual wear",
+    "twillDesc": "Three-dimensional texture, outstanding quality, suitable for formal and high-end clothing",
+    "coteDesc": "Innovative fabric, highly functional, suitable for special scenarios and high-performance clothing",
+    "inquiry": "Inquiry",
+    "priceLabel": "Reference Price",
+    "featuresLabel": "Product Features",
+    "featuresDesc": "Quality Assurance",
+    "feature1Title": "Premium Materials",
+    "feature1Desc": "Selected global premium raw materials, ensuring product quality from the source",
+    "feature2Title": "Exquisite Craftsmanship",
+    "feature2Desc": "Advanced production technology, every process is refined",
+    "feature3Title": "Rich Colors",
+    "feature3Desc": "1000+ color options to meet your personalized needs",
+    "feature4Title": "Environmental Concept",
+    "feature4Desc": "Committed to sustainable development, using eco-friendly dyes and processes"
   }
 }

@@ -25,149 +25,414 @@
         </div>
         <ul class="nav-links">
             <li><a href="index.html">首页</a></li>
-           
             <li class="active"><a href="products.html">产品中心</a></li>
-             <li><a href="about.html">关于我们</a></li>
+            <li><a href="about.html">关于我们</a></li>
             <li><a href="contact.html">联系我们</a></li>
         </ul>
     </nav>
 
-    <!-- <section class="page-hero">
-        <div class="page-hero-content">
-            <h1>产品中心</h1>
-            <p>Products</p>
-        </div>
-    </section> -->
-
-    <section class="products-section section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-label">Our Products</h2>
-                <p class="section-desc">产品一覧</p>
+    <!-- 产品中心 - 美团式布局 -->
+    <div class="products-container">
+        <!-- 左侧导航 -->
+        <aside class="products-sidebar">
+            <div class="sidebar-header">
+                <h3>产品系列</h3>
             </div>
-            <div class="products-intro">
-                <p>我们将面料产品划分为多个系列，每个系列下均能提供多款面料产品。每款织物配备参考价格与使用场景建议，帮助您快速选择合适材料。</p>
-            </div>
+            <nav class="category-nav">
+                <a href="#cotton" class="category-item active" data-category="cotton">
+                    <!-- <span class="category-icon">🌿</span> -->
+                    <span class="category-name">纯棉系列</span>
+                    <span class="category-count">3款</span>
+                </a>
+                <a href="#linen" class="category-item" data-category="linen">
+                    <!-- <span class="category-icon">🍃</span> -->
+                    <span class="category-name">亚麻系列</span>
+                    <span class="category-count">3款</span>
+                </a>
+                <a href="#stretch" class="category-item" data-category="stretch">
+                    <!-- <span class="category-icon">💪</span> -->
+                    <span class="category-name">弹力系列</span>
+                    <span class="category-count">3款</span>
+                </a>
+                <a href="#twill" class="category-item" data-category="twill">
+                    <!-- <span class="category-icon">📐</span> -->
+                    <span class="category-name">斜纹系列</span>
+                    <span class="category-count">3款</span>
+                </a>
+                <a href="#cote" class="category-item" data-category="cote">
+                    <!-- <span class="category-icon">✨</span> -->
+                    <span class="category-name">可特系列</span>
+                    <span class="category-count">3款</span>
+                </a>
+            </nav>
+        </aside>
 
-            <div class="series-list">
-                <article class="series-card">
-                    <div class="series-card-head">
-                        <h3>纯棉系列</h3>
-                        <p>经典环保面料，亲肤透气，适合日常服装与家居产品。</p>
+        <!-- 右侧内容区 -->
+        <main class="products-main">
+            <!-- 纯棉系列 -->
+            <section id="cotton" class="product-category">
+                <div class="category-header">
+                    <h2>纯棉系列</h2>
+                    <p class="category-desc">天然舒适，透气吸汗，适合贴身衣物与日常服饰</p>
+                </div>
+                <div class="product-grid-meituan">
+                    <div class="product-card-meituan">
+                        <div class="product-img">
+                            <img src="images/纯棉系列.png" alt="纯棉柔软A">
+                        </div>
+                        <div class="product-info-meituan">
+                            <h4 class="product-title">纯棉柔软A</h4>
+                            <p class="product-desc">柔软亲肤，适合T恤、内衣等贴身衣物</p>
+                            <div class="product-tags">
+                                <span class="tag">透气</span>
+                                <span class="tag">吸汗</span>
+                                <span class="tag">舒适</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-label">参考价</span>
+                                    <span class="price-value">¥58/m</span>
+                                </div>
+                                <button class="btn-inquiry">咨询</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="product-item-grid">
-                        <article class="product-item" data-title="纯棉轻柔A" data-description="适合衬衫与女士家居服，柔软舒适，吸汗性好。" data-features="透气、亲肤、易染色">
-                            <div class="product-image">
-                                <img src="images/纯棉系列.png" alt="纯棉轻柔A">
-                            </div>
-                            <div class="product-details">
-                                <h4>纯棉轻柔A</h4>
-                                <p class="product-price">参考价：¥48/m</p>
-                                <p>细腻手感，适用于春秋衬衫与家居服。</p>
-                            </div>
-                        </article>
-                        <article class="product-item" data-title="纯棉舒适B" data-description="厚薄适中，适合T恤、卫衣与婴幼儿服装。" data-features="耐洗、柔软、舒适">
-                            <div class="product-image">
-                                <img src="images/纯棉系列.png" alt="纯棉舒适B">
-                            </div>
-                            <div class="product-details">
-                                <h4>纯棉舒适B</h4>
-                                <p class="product-price">参考价：¥55/m</p>
-                                <p>结构稳定，手感柔软，适合亲肤服装。</p>
-                            </div>
-                        </article>
-                        <article class="product-item" data-title="纯棉活力C" data-description="面料弹性好，适合休闲运动装与日常街头风。" data-features="舒适、透气、弹性良好">
-                            <div class="product-image">
-                                <img src="images/纯棉系列.png" alt="纯棉活力C">
-                            </div>
-                            <div class="product-details">
-                                <h4>纯棉活力C</h4>
-                                <p class="product-price">参考价：¥62/m</p>
-                                <p>弹力良好，适合休闲装与运动面料。</p>
-                            </div>
-                        </article>
-                    </div>
-                </article>
 
-                <article class="series-card">
-                    <div class="series-card-head">
-                        <h3>亚麻系列</h3>
-                        <p>天然凉感面料，雅致质感，适合夏季服装与轻奢成衣。</p>
+                    <div class="product-card-meituan">
+                        <div class="product-img">
+                            <img src="images/纯棉系列.png" alt="纯棉厚实B">
+                        </div>
+                        <div class="product-info-meituan">
+                            <h4 class="product-title">纯棉厚实B</h4>
+                            <p class="product-desc">质地厚实，适合卫衣、外套等秋冬服装</p>
+                            <div class="product-tags">
+                                <span class="tag">保暖</span>
+                                <span class="tag">耐用</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-label">参考价</span>
+                                    <span class="price-value">¥62/m</span>
+                                </div>
+                                <button class="btn-inquiry">咨询</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="product-item-grid">
-                        <article class="product-item" data-title="亚麻透气A" data-description="清爽透气，适合衬衫与裙装，天然纹理更有质感。" data-features="凉爽、透气、天然">
-                            <div class="product-image">
-                                <img src="images/纯棉系列.png" alt="亚麻透气A">
-                            </div>
-                            <div class="product-details">
-                                <h4>亚麻透气A</h4>
-                                <p class="product-price">参考价：¥78/m</p>
-                                <p>天然本色纹理，透气舒适，适合夏日新品。</p>
-                            </div>
-                        </article>
-                        <article class="product-item" data-title="亚麻文艺B" data-description="质地柔软，适合女装上衣与休闲裤，富有手感。" data-features="自然纹理、舒适、耐用">
-                            <div class="product-image">
-                                <img src="images/纯棉系列.png" alt="亚麻文艺B">
-                            </div>
-                            <div class="product-details">
-                                <h4>亚麻文艺B</h4>
-                                <p class="product-price">参考价：¥82/m</p>
-                                <p>优雅自然，适合轻奢女装与休闲装。</p>
-                            </div>
-                        </article>
-                        <article class="product-item" data-title="亚麻舒适C" data-description="混纺工艺提高耐磨性与回弹力，兼顾舒适与实用。" data-features="耐磨、透气、易打理">
-                            <div class="product-image">
-                                <img src="images/纯棉系列.png" alt="亚麻舒适C">
-                            </div>
-                            <div class="product-details">
-                                <h4>亚麻舒适C</h4>
-                                <p class="product-price">参考价：¥85/m</p>
-                                <p>兼顾质感与耐用性，适合成衣与家居布艺。</p>
-                            </div>
-                        </article>
-                    </div>
-                </article>
 
-                <article class="series-card">
-                    <div class="series-card-head">
-                        <h3>弹力系列</h3>
-                        <p>高弹性能面料，贴合身形，称手而舒适，适合运动与休闲装。</p>
+                    <div class="product-card-meituan">
+                        <div class="product-img">
+                            <img src="images/纯棉系列.png" alt="纯棉精梳C">
+                        </div>
+                        <div class="product-info-meituan">
+                            <h4 class="product-title">纯棉精梳C</h4>
+                            <p class="product-desc">精梳工艺，光泽度好，适合高端衬衫</p>
+                            <div class="product-tags">
+                                <span class="tag">高端</span>
+                                <span class="tag">光泽</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-label">参考价</span>
+                                    <span class="price-value">¥68/m</span>
+                                </div>
+                                <button class="btn-inquiry">咨询</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="product-item-grid">
-                        <article class="product-item" data-title="弹力轻舒A" data-description="回弹力好，适用于运动T恤、健身装与瑜伽服。" data-features="高弹、吸汗、易打理">
-                            <div class="product-image">
-                                <img src="images/纯棉系列.png" alt="弹力轻舒A">
+                </div>
+            </section>
+
+            <!-- 亚麻系列 -->
+            <section id="linen" class="product-category">
+                <div class="category-header">
+                    <h2>亚麻系列</h2>
+                    <p class="category-desc">自然纹理，透气清爽，适合夏季服装与文艺风格</p>
+                </div>
+                <div class="product-grid-meituan">
+                    <div class="product-card-meituan">
+                        <div class="product-img">
+                            <img src="images/纯棉系列.png" alt="亚麻透气A">
+                        </div>
+                        <div class="product-info-meituan">
+                            <h4 class="product-title">亚麻透气A</h4>
+                            <p class="product-desc">天然本色纹理，透气舒适，适合夏日新品</p>
+                            <div class="product-tags">
+                                <span class="tag">透气</span>
+                                <span class="tag">清爽</span>
                             </div>
-                            <div class="product-details">
-                                <h4>弹力轻舒A</h4>
-                                <p class="product-price">参考价：¥66/m</p>
-                                <p>轻薄舒适，适合运动与日常休闲穿着。</p>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-label">参考价</span>
+                                    <span class="price-value">¥78/m</span>
+                                </div>
+                                <button class="btn-inquiry">咨询</button>
                             </div>
-                        </article>
-                        <article class="product-item" data-title="弹力修身B" data-description="贴合度高，适合运动裤和紧身外套。" data-features="弹力强、耐磨、透气">
-                            <div class="product-image">
-                                <img src="images/纯棉系列.png" alt="弹力修身B">
-                            </div>
-                            <div class="product-details">
-                                <h4>弹力修身B</h4>
-                                <p class="product-price">参考价：¥70/m</p>
-                                <p>回弹性佳，适合贴身休闲与运动服。</p>
-                            </div>
-                        </article>
-                        <article class="product-item" data-title="弹力耐用C" data-description="增加耐磨纹理，适合工装、工艺装与户外服装。" data-features="耐用、弹性、舒适">
-                            <div class="product-image">
-                                <img src="images/纯棉系列.png" alt="弹力耐用C">
-                            </div>
-                            <div class="product-details">
-                                <h4>弹力耐用C</h4>
-                                <p class="product-price">参考价：¥74/m</p>
-                                <p>兼具弹力与耐磨，适合功能性服饰。</p>
-                            </div>
-                        </article>
+                        </div>
                     </div>
-                </article>
-            </div>
-        </div>
+
+                    <div class="product-card-meituan">
+                        <div class="product-img">
+                            <img src="images/纯棉系列.png" alt="亚麻文艺B">
+                        </div>
+                        <div class="product-info-meituan">
+                            <h4 class="product-title">亚麻文艺B</h4>
+                            <p class="product-desc">质地柔软，适合女装上衣与休闲裤</p>
+                            <div class="product-tags">
+                                <span class="tag">文艺</span>
+                                <span class="tag">柔软</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-label">参考价</span>
+                                    <span class="price-value">¥82/m</span>
+                                </div>
+                                <button class="btn-inquiry">咨询</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-meituan">
+                        <div class="product-img">
+                            <img src="images/纯棉系列.png" alt="亚麻舒适C">
+                        </div>
+                        <div class="product-info-meituan">
+                            <h4 class="product-title">亚麻舒适C</h4>
+                            <p class="product-desc">混纺工艺提高耐磨性与回弹力</p>
+                            <div class="product-tags">
+                                <span class="tag">耐磨</span>
+                                <span class="tag">实用</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-label">参考价</span>
+                                    <span class="price-value">¥85/m</span>
+                                </div>
+                                <button class="btn-inquiry">咨询</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 弹力系列 -->
+            <section id="stretch" class="product-category">
+                <div class="category-header">
+                    <h2>弹力系列</h2>
+                    <p class="category-desc">高弹性能，贴合身形，适合运动与休闲装</p>
+                </div>
+                <div class="product-grid-meituan">
+                    <div class="product-card-meituan">
+                        <div class="product-img">
+                            <img src="images/纯棉系列.png" alt="弹力轻舒A">
+                        </div>
+                        <div class="product-info-meituan">
+                            <h4 class="product-title">弹力轻舒A</h4>
+                            <p class="product-desc">回弹力好，适用于运动T恤、健身装</p>
+                            <div class="product-tags">
+                                <span class="tag">高弹</span>
+                                <span class="tag">吸汗</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-label">参考价</span>
+                                    <span class="price-value">¥66/m</span>
+                                </div>
+                                <button class="btn-inquiry">咨询</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-meituan">
+                        <div class="product-img">
+                            <img src="images/纯棉系列.png" alt="弹力修身B">
+                        </div>
+                        <div class="product-info-meituan">
+                            <h4 class="product-title">弹力修身B</h4>
+                            <p class="product-desc">贴合度高，适合运动裤和紧身外套</p>
+                            <div class="product-tags">
+                                <span class="tag">弹力强</span>
+                                <span class="tag">透气</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-label">参考价</span>
+                                    <span class="price-value">¥70/m</span>
+                                </div>
+                                <button class="btn-inquiry">咨询</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-meituan">
+                        <div class="product-img">
+                            <img src="images/纯棉系列.png" alt="弹力耐用C">
+                        </div>
+                        <div class="product-info-meituan">
+                            <h4 class="product-title">弹力耐用C</h4>
+                            <p class="product-desc">增加耐磨纹理，适合工装与户外服装</p>
+                            <div class="product-tags">
+                                <span class="tag">耐用</span>
+                                <span class="tag">户外</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-label">参考价</span>
+                                    <span class="price-value">¥74/m</span>
+                                </div>
+                                <button class="btn-inquiry">咨询</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 斜纹系列 -->
+            <section id="twill" class="product-category">
+                <div class="category-header">
+                    <h2>斜纹系列</h2>
+                    <p class="category-desc">立体纹理，质感出众，适合正装与高端服饰</p>
+                </div>
+                <div class="product-grid-meituan">
+                    <div class="product-card-meituan">
+                        <div class="product-img">
+                            <img src="images/纯棉系列.png" alt="斜纹商务A">
+                        </div>
+                        <div class="product-info-meituan">
+                            <h4 class="product-title">斜纹商务A</h4>
+                            <p class="product-desc">适合西装、正装衬衫等商务场合</p>
+                            <div class="product-tags">
+                                <span class="tag">商务</span>
+                                <span class="tag">挺括</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-label">参考价</span>
+                                    <span class="price-value">¥88/m</span>
+                                </div>
+                                <button class="btn-inquiry">咨询</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-meituan">
+                        <div class="product-img">
+                            <img src="images/纯棉系列.png" alt="斜纹休闲B">
+                        </div>
+                        <div class="product-info-meituan">
+                            <h4 class="product-title">斜纹休闲B</h4>
+                            <p class="product-desc">质地柔软，适合休闲裤与夹克</p>
+                            <div class="product-tags">
+                                <span class="tag">休闲</span>
+                                <span class="tag">质感</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-label">参考价</span>
+                                    <span class="price-value">¥76/m</span>
+                                </div>
+                                <button class="btn-inquiry">咨询</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-meituan">
+                        <div class="product-img">
+                            <img src="images/纯棉系列.png" alt="斜纹高端C">
+                        </div>
+                        <div class="product-info-meituan">
+                            <h4 class="product-title">斜纹高端C</h4>
+                            <p class="product-desc">精细纹理，适合高端定制服装</p>
+                            <div class="product-tags">
+                                <span class="tag">高端</span>
+                                <span class="tag">定制</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-label">参考价</span>
+                                    <span class="price-value">¥95/m</span>
+                                </div>
+                                <button class="btn-inquiry">咨询</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 可特系列 -->
+            <section id="cote" class="product-category">
+                <div class="category-header">
+                    <h2>可特系列</h2>
+                    <p class="category-desc">创新面料，功能性强，适合特殊场景与高性能服装</p>
+                </div>
+                <div class="product-grid-meituan">
+                    <div class="product-card-meituan">
+                        <div class="product-img">
+                            <img src="images/纯棉系列.png" alt="可特防水A">
+                        </div>
+                        <div class="product-info-meituan">
+                            <h4 class="product-title">可特防水A</h4>
+                            <p class="product-desc">防水透气，适合户外冲锋衣、雨衣</p>
+                            <div class="product-tags">
+                                <span class="tag">防水</span>
+                                <span class="tag">透气</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-label">参考价</span>
+                                    <span class="price-value">¥98/m</span>
+                                </div>
+                                <button class="btn-inquiry">咨询</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-meituan">
+                        <div class="product-img">
+                            <img src="images/纯棉系列.png" alt="可特速干B">
+                        </div>
+                        <div class="product-info-meituan">
+                            <h4 class="product-title">可特速干B</h4>
+                            <p class="product-desc">快速排汗速干，适合运动服、登山服</p>
+                            <div class="product-tags">
+                                <span class="tag">速干</span>
+                                <span class="tag">排汗</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-label">参考价</span>
+                                    <span class="price-value">¥88/m</span>
+                                </div>
+                                <button class="btn-inquiry">咨询</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card-meituan">
+                        <div class="product-img">
+                            <img src="images/纯棉系列.png" alt="可特抗菌C">
+                        </div>
+                        <div class="product-info-meituan">
+                            <h4 class="product-title">可特抗菌C</h4>
+                            <p class="product-desc">抗菌防臭，适合内衣、运动装</p>
+                            <div class="product-tags">
+                                <span class="tag">抗菌</span>
+                                <span class="tag">防臭</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-label">参考价</span>
+                                    <span class="price-value">¥92/m</span>
+                                </div>
+                                <button class="btn-inquiry">咨询</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+               
+        
     </section>
 
     <section class="product-features section">
@@ -224,21 +489,12 @@
         </div>
     </section>
 
-    <div class="product-modal" id="productModal" aria-hidden="true">
-        <div class="product-modal-backdrop"></div>
-        <div class="product-modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-            <button class="modal-close" type="button" aria-label="关闭">×</button>
-            <h3 class="modal-title" id="modalTitle"></h3>
-            <p class="modal-description"></p>
-            <ul class="modal-list"></ul>
-        </div>
-    </div>
-
     <footer>
         <div class="footer-content">
-            <p>© 2026 慕然纺织 版权所有</p>
+            <p>© 2026 米晴纺织 版权所有</p>
             <p class="footer-tagline">匠心织造 · 面料世家</p>
         </div>
+    </footer>
     </footer>
 
     <!-- 微信悬浮按钮 -->

@@ -205,6 +205,7 @@ const init = () => {
     handleNavbarScroll();
     initSmoothScroll();
     initWechatFloat();
+    initProductsNav();
 };
 
 // 微信悬浮按钮交互
@@ -229,3 +230,58 @@ const initWechatFloat = () => {
 };
 
 document.addEventListener('DOMContentLoaded', init);
+
+
+// 产品中心导航交互
+const initProductsNav = () => {
+    const categoryItems = selectAll('.category-item');
+    const productCategories = selectAll('.product-category');
+    
+    if (categoryItems.length === 0) return;
+    
+    // 点击导航项滚动到对应区域
+    categoryItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            // 移除所有active类
+            categoryItems.forEach(i => i.classList.remove('active'));
+            // 添加当前active类
+            item.classList.add('active');
+            
+            // 滚动到对应区域
+            const targetId = item.getAttribute('href');
+            const targetSection = select(targetId);
+            
+            if (targetSection) {
+                const offsetTop = targetSection.offsetTop - 120;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
+    // 滚动时高亮当前区域
+    const observerOptions = {
+        threshold: 0.3,
+        rootMargin: '-120px 0px -50% 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute('id');
+                categoryItems.forEach(item => {
+                    if (item.getAttribute('href') === `#${id}`) {
+                        categoryItems.forEach(i => i.classList.remove('active'));
+                        item.classList.add('active');
+                    }
+                });
+            }
+        });
+    }, observerOptions);
+    
+    productCategories.forEach(category => observer.observe(category));
+};

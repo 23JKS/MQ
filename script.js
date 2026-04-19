@@ -206,6 +206,7 @@ const init = () => {
     initSmoothScroll();
     initWechatFloat();
     initProductsNav();
+    initHeroSlider();
 };
 
 // 微信悬浮按钮交互
@@ -284,4 +285,85 @@ const initProductsNav = () => {
     }, observerOptions);
     
     productCategories.forEach(category => observer.observe(category));
+};
+
+
+// 首屏轮播图
+const initHeroSlider = () => {
+    const slides = selectAll('.hero-slide');
+    const prevBtn = select('.slider-prev');
+    const nextBtn = select('.slider-next');
+    const indicators = selectAll('.indicator');
+    
+    if (slides.length === 0) return;
+    
+    let currentSlide = 0;
+    let autoPlayInterval;
+    
+    const showSlide = (index) => {
+        // 移除所有active类
+        slides.forEach(slide => slide.classList.remove('active'));
+        indicators.forEach(indicator => indicator.classList.remove('active'));
+        
+        // 添加当前active类
+        slides[index].classList.add('active');
+        indicators[index].classList.add('active');
+        
+        currentSlide = index;
+    };
+    
+    const nextSlide = () => {
+        const next = (currentSlide + 1) % slides.length;
+        showSlide(next);
+    };
+    
+    const prevSlide = () => {
+        const prev = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(prev);
+    };
+    
+    // 自动播放
+    const startAutoPlay = () => {
+        autoPlayInterval = setInterval(nextSlide, 5000);
+    };
+    
+    const stopAutoPlay = () => {
+        clearInterval(autoPlayInterval);
+    };
+    
+    // 按钮事件
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            stopAutoPlay();
+            startAutoPlay();
+        });
+    }
+    
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            stopAutoPlay();
+            startAutoPlay();
+        });
+    }
+    
+    // 指示器事件
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            showSlide(index);
+            stopAutoPlay();
+            startAutoPlay();
+        });
+    });
+    
+    // 鼠标悬停暂停
+    const heroSlider = select('.hero-slider');
+    if (heroSlider) {
+        heroSlider.addEventListener('mouseenter', stopAutoPlay);
+        heroSlider.addEventListener('mouseleave', startAutoPlay);
+    }
+    
+    // 启动自动播放
+    startAutoPlay();
 };

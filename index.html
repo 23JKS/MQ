@@ -32,21 +32,67 @@
     </nav>
 
     <header id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <p class="hero-subtitle">もっと柔らかく、もっと美しく</p>
-            <h1 class="hero-title">
-                <span class="title-line">一线织梦</span>
-                <span class="title-line-jp">一本の糸から</span>
-            </h1>
-            <h1 class="hero-title">
-                <span class="title-line">彩绘未来</span>
-                <span class="title-line-jp">未来を彩る</span>
-            </h1>
+        <!-- 轮播图容器 -->
+        <div class="hero-slider">
+            <!-- 轮播项1 -->
+            <div class="hero-slide active">
+                <img src="images/纯棉系列.png" alt="企业风貌">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h2 class="slide-title">匠心织造 品质为先</h2>
+                    <p class="slide-desc">专注纺织面料20余年，为全球品牌提供优质面料</p>
+                </div>
+            </div>
+            
+            <!-- 轮播项2 -->
+            <div class="hero-slide">
+                <img src="images/纯棉系列.png" alt="产品展示">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h2 class="slide-title">多样选择 应有尽有</h2>
+                    <p class="slide-desc">1000+面料样式，满足您的各种需求</p>
+                </div>
+            </div>
+            
+            <!-- 轮播项3 -->
+            <div class="hero-slide">
+                <img src="images/纯棉系列.png" alt="生产车间">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h2 class="slide-title">先进设备 精益生产</h2>
+                    <p class="slide-desc">现代化生产线，确保每一米布的品质</p>
+                </div>
+            </div>
+            
+            <!-- 轮播项4 -->
+            <div class="hero-slide">
+                <img src="images/纯棉系列.png" alt="色彩展示">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h2 class="slide-title">色彩丰富 随心选择</h2>
+                    <p class="slide-desc">1000+现货色彩，快速交付</p>
+                </div>
+            </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="scroll-icon"></div>
-            <span>SCROLL</span>
+        
+        <!-- 左右切换按钮 -->
+        <button class="slider-btn slider-prev" aria-label="上一张">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        <button class="slider-btn slider-next" aria-label="下一张">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+        
+        <!-- 指示器 -->
+        <div class="slider-indicators">
+            <button class="indicator active" data-slide="0"></button>
+            <button class="indicator" data-slide="1"></button>
+            <button class="indicator" data-slide="2"></button>
+            <button class="indicator" data-slide="3"></button>
         </div>
     </header>
 
@@ -54,7 +100,7 @@
         <div class="container">
             <div class="brand-content">
                 <div class="brand-left">
-                    <h2 class="section-label">Brand Message</h2>
+                    <h2 class="section-label">品牌理念</h2>
                     <h3 class="section-title">用心做好<br>每一米布</h3>
                 </div>
                 <div class="brand-right">
@@ -73,8 +119,8 @@
     <section id="products" class="products-section section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-label">Products</h2>
-                <p class="section-desc">产品一覧</p>
+                <h2 class="section-label">产品系列</h2>
+                <p class="section-desc">精选面料</p>
             </div>
             <div class="product-grid">
                 <div class="product-card">
@@ -120,8 +166,8 @@
     <section class="advantages-section section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-label">Advantages</h2>
-                <p class="section-desc">当社の強み</p>
+                <h2 class="section-label">核心优势</h2>
+                <p class="section-desc">我们的优势</p>
             </div>
             <div class="advantage-grid">
                 <div class="adv-item">

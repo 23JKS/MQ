@@ -526,14 +526,14 @@ body {
 
 .advantage-grid { 
     display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    gap: 60px; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px; 
     text-align: center; 
 }
 
 .adv-item {
     transition: transform 0.3s ease;
-    padding: 20px;
+    padding: 15px 10px;
     border-radius: 12px;
 }
 
@@ -543,10 +543,10 @@ body {
 }
 
 .adv-number { 
-    font-size: 2.5rem; 
+    font-size: 2rem; 
     color: #6b5d52; 
     font-weight: 300; 
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-family: 'Georgia', serif;
     transition: all 0.3s ease;
 }
@@ -557,11 +557,11 @@ body {
 }
 
 .adv-title { 
-    font-size: 1.5rem; 
+    font-size: 1.3rem; 
     font-weight: 400; 
-    margin-bottom: 20px; 
+    margin-bottom: 15px; 
     color: #e8dfd3; 
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     transition: color 0.3s ease;
 }
 
@@ -570,9 +570,9 @@ body {
 }
 
 .adv-desc { 
-    font-size: 0.95rem; 
+    font-size: 0.9rem; 
     color: #bbb; 
-    line-height: 2; 
+    line-height: 1.8; 
     letter-spacing: 0.5px;
 }
 

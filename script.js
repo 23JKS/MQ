@@ -247,26 +247,38 @@ const initI18n = async () => {
 
     // 从 localStorage 获取保存的语言，默认为中文
     const savedLang = localStorage.getItem('language') || 'zh';
+    console.log('Initializing i18next with language:', savedLang);
 
-    await i18next
-        .use(i18nextHttpBackend)
-        .init({
-            lng: savedLang,
-            fallbackLng: 'zh',
-            debug: false,
-            backend: {
-                loadPath: 'lang/{{lng}}.json'
-            }
-        });
+    try {
+        await i18next
+            .use(i18nextHttpBackend)
+            .init({
+                lng: savedLang,
+                fallbackLng: 'zh',
+                debug: true,
+                backend: {
+                    loadPath: 'lang/{{lng}}.json'
+                }
+            });
 
-    // 更新页面内容
-    updateContent();
+        console.log('i18next initialized successfully, current language:', i18next.language);
+        
+        // 更新页面内容
+        updateContent();
+    } catch (error) {
+        console.error('Failed to initialize i18next:', error);
+    }
 };
 
 // 更新页面内容
 const updateContent = () => {
+    console.log('Updating content with language:', i18next.language);
+    
     // 更新所有带 data-i18n 属性的元素
-    selectAll('[data-i18n]').forEach(element => {
+    const elements = selectAll('[data-i18n]');
+    console.log('Found', elements.length, 'elements with data-i18n');
+    
+    elements.forEach(element => {
         const key = element.getAttribute('data-i18n');
         const translation = i18next.t(key);
         

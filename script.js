@@ -204,6 +204,40 @@ const init = () => {
     observeElements();
     handleNavbarScroll();
     initSmoothScroll();
+    initWechatFloat();
+};
+
+// 微信悬浮按钮交互
+const initWechatFloat = () => {
+    const wechatBtn = select('.wechat-btn');
+    const wechatQrcode = select('.wechat-qrcode');
+    
+    if (!wechatBtn || !wechatQrcode) return;
+    
+    // 点击按钮切换二维码显示
+    wechatBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isVisible = wechatQrcode.style.opacity === '1';
+        
+        if (isVisible) {
+            wechatQrcode.style.opacity = '0';
+            wechatQrcode.style.visibility = 'hidden';
+            wechatQrcode.style.transform = 'translateX(20px)';
+        } else {
+            wechatQrcode.style.opacity = '1';
+            wechatQrcode.style.visibility = 'visible';
+            wechatQrcode.style.transform = 'translateX(0)';
+        }
+    });
+    
+    // 点击页面其他地方关闭二维码
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.wechat-float')) {
+            wechatQrcode.style.opacity = '0';
+            wechatQrcode.style.visibility = 'hidden';
+            wechatQrcode.style.transform = 'translateX(20px)';
+        }
+    });
 };
 
 document.addEventListener('DOMContentLoaded', init);

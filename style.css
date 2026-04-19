@@ -1078,3 +1078,109 @@ footer::before {
         font-size: 2rem;
     }
 }
+
+
+/* ================= 微信悬浮按钮 ================= */
+.wechat-float {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 999;
+}
+
+.wechat-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #07c160 0%, #06ae56 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-family: 'PingFang SC', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(7, 193, 96, 0.4);
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.wechat-btn:hover {
+    background: linear-gradient(135deg, #06ae56 0%, #059c4d 100%);
+    box-shadow: 0 6px 30px rgba(7, 193, 96, 0.5);
+    transform: translateY(-3px);
+}
+
+.wechat-btn svg {
+    flex-shrink: 0;
+}
+
+.wechat-qrcode {
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    margin-right: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(20px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.wechat-float:hover .wechat-qrcode,
+.wechat-btn:focus + .wechat-qrcode {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.qrcode-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    min-width: 200px;
+}
+
+.qrcode-content img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.qrcode-content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+    .wechat-float {
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .wechat-btn span {
+        display: none;
+    }
+    
+    .wechat-btn {
+        width: 56px;
+        height: 56px;
+        padding: 0;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    
+    .wechat-qrcode {
+        bottom: 70px;
+        right: 0;
+        margin-right: 0;
+    }
+}

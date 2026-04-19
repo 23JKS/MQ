@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 | 米晴纺织</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo-area">
+            <div class="logo-icon">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <rect x="5" y="5" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <line x1="12" y1="15" x2="28" y2="15" stroke="currentColor" stroke-width="1"/>
+                    <line x1="12" y1="20" x2="28" y2="20" stroke="currentColor" stroke-width="1"/>
+                    <line x1="12" y1="25" x2="28" y2="25" stroke="currentColor" stroke-width="1"/>
+                </svg>
+            </div>
+            <div class="logo-text">
+                <div class="company-name">米晴纺织</div>
+                <div class="slogan">至臻品质 匠心理布</div>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li>
+            
+            <li><a href="products.html">产品中心</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li class="active"><a href="contact.html">联系我们</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>联系我们</h1>
+            <p>Contact Us</p>
+        </div>
+    </section>
+
+    <section class="contact-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-label">Contact</h2>
+                <p class="section-desc">欢迎留言，我们会尽快回复</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p class="contact-intro">欢迎咨询面料、定制和合作事宜，我们会在24小时内给您回复。</p>
+                    <div class="info-list">
+                        <div class="info-item">
+                            <span class="info-label">联系人</span>
+                            <span class="info-value">屈经理</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">电话</span>
+                            <span class="info-value">+86 138 0000 0000</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">邮箱</span>
+                            <span class="info-value">info@mrtextile.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">地址</span>
+                            <span class="info-value">江苏省苏州市吴江区盛泽镇德尔金色摩纺12幢106—107号</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input id="name" name="name" type="text" placeholder="请输入您的姓名" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">电话</label>
+                        <input id="phone" name="phone" type="tel" placeholder="请输入联系电话" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input id="email" name="email" type="email" placeholder="请输入邮箱地址" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">留言内容</label>
+                        <textarea id="message" name="message" rows="6" placeholder="请描述您的需求" required></textarea>
+                    </div>
+                    <button type="submit">发送留言</button>
+                    <p class="form-status" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 米晴纺织 版权所有</p>
+            <p class="footer-tagline">匠心织造 · 面料世家</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

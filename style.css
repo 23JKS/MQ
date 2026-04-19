@@ -1118,8 +1118,7 @@ footer::before {
 .wechat-qrcode {
     position: absolute;
     bottom: 0;
-    right: 100%;
-    margin-right: 15px;
+    right: calc(100% + 15px);
     opacity: 0;
     visibility: hidden;
     transform: translateX(20px);
@@ -1127,8 +1126,7 @@ footer::before {
     pointer-events: none;
 }
 
-.wechat-float:hover .wechat-qrcode,
-.wechat-btn:focus + .wechat-qrcode {
+.wechat-float.active .wechat-qrcode {
     opacity: 1;
     visibility: visible;
     transform: translateX(0);
@@ -1179,8 +1177,13 @@ footer::before {
     }
     
     .wechat-qrcode {
-        bottom: 70px;
+        bottom: calc(100% + 10px);
         right: 0;
-        margin-right: 0;
+        left: auto;
+        transform: translateY(10px);
+    }
+    
+    .wechat-float.active .wechat-qrcode {
+        transform: translateY(0);
     }
 }

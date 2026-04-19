@@ -24,11 +24,18 @@
             </div>
         </div>
         <ul class="nav-links">
-            <li class="active"><a href="index.html">首页</a></li>
-              <li><a href="products.html">产品中心</a></li>
-            <li><a href="about.html">关于我们</a></li>
-            <li><a href="contact.html">联系我们</a></li>
+            <li class="active"><a href="index.html" data-i18n="nav.home">首页</a></li>
+            <li><a href="products.html" data-i18n="nav.products">产品中心</a></li>
+            <li><a href="about.html" data-i18n="nav.about">关于我们</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li>
         </ul>
+        
+        <!-- 语言切换 -->
+        <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="zh">中文</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="ja">日本語</button>
+        </div>
     </nav>
 
     <header id="home" class="hero">
@@ -39,8 +46,8 @@
                 <img src="images/纯棉系列.png" alt="企业风貌">
                 <div class="slide-overlay"></div>
                 <div class="slide-content">
-                    <h2 class="slide-title">匠心织造 品质为先</h2>
-                    <p class="slide-desc">专注纺织面料20余年，为全球品牌提供优质面料</p>
+                    <h2 class="slide-title" data-i18n="hero.slide1.title">匠心织造 品质为先</h2>
+                    <p class="slide-desc" data-i18n="hero.slide1.desc">专注纺织面料20余年，为全球品牌提供优质面料</p>
                 </div>
             </div>
             
@@ -49,8 +56,8 @@
                 <img src="images/纯棉系列.png" alt="产品展示">
                 <div class="slide-overlay"></div>
                 <div class="slide-content">
-                    <h2 class="slide-title">多样选择 应有尽有</h2>
-                    <p class="slide-desc">1000+面料样式，满足您的各种需求</p>
+                    <h2 class="slide-title" data-i18n="hero.slide2.title">多样选择 应有尽有</h2>
+                    <p class="slide-desc" data-i18n="hero.slide2.desc">1000+面料样式，满足您的各种需求</p>
                 </div>
             </div>
             
@@ -59,8 +66,8 @@
                 <img src="images/纯棉系列.png" alt="生产车间">
                 <div class="slide-overlay"></div>
                 <div class="slide-content">
-                    <h2 class="slide-title">先进设备 精益生产</h2>
-                    <p class="slide-desc">现代化生产线，确保每一米布的品质</p>
+                    <h2 class="slide-title" data-i18n="hero.slide3.title">先进设备 精益生产</h2>
+                    <p class="slide-desc" data-i18n="hero.slide3.desc">现代化生产线，确保每一米布的品质</p>
                 </div>
             </div>
             
@@ -69,8 +76,8 @@
                 <img src="images/纯棉系列.png" alt="色彩展示">
                 <div class="slide-overlay"></div>
                 <div class="slide-content">
-                    <h2 class="slide-title">色彩丰富 随心选择</h2>
-                    <p class="slide-desc">1000+现货色彩，快速交付</p>
+                    <h2 class="slide-title" data-i18n="hero.slide4.title">色彩丰富 随心选择</h2>
+                    <p class="slide-desc" data-i18n="hero.slide4.desc">1000+现货色彩，快速交付</p>
                 </div>
             </div>
         </div>
@@ -100,14 +107,14 @@
         <div class="container">
             <div class="brand-content">
                 <div class="brand-left">
-                    <h2 class="section-label">品牌理念</h2>
-                    <h3 class="section-title">用心做好<br>每一米布</h3>
+                    <h2 class="section-label" data-i18n="brand.label">品牌理念</h2>
+                    <h3 class="section-title" data-i18n="brand.title" data-i18n-html="true">用心做好<br>每一米布</h3>
                 </div>
                 <div class="brand-right">
-                    <p class="brand-desc">
+                    <p class="brand-desc" data-i18n="brand.desc1">
                         在服装的世界里，面料不仅仅是支撑外观的存在，更是舒适度、品质感、功能性的关键。
                     </p>
-                    <p class="brand-desc">
+                    <p class="brand-desc" data-i18n="brand.desc2">
                         我们致力于打造高端、舒适、耐用的纺织面料，为全球品牌提供多样化选择，
                         从选材到生产，我们力求让每一块面料成为服装的完美搭档。
                     </p>
@@ -119,8 +126,8 @@
     <section id="products" class="products-section section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-label">产品系列</h2>
-                <p class="section-desc">精选面料</p>
+                <h2 class="section-label" data-i18n="products.label">产品系列</h2>
+                <p class="section-desc" data-i18n="products.desc">精选面料</p>
             </div>
             <div class="product-grid">
                 <div class="product-card">
@@ -128,7 +135,7 @@
                         <img src="images/纯棉系列.png" alt="纯棉系列">
                     </div>
                     <div class="product-info">
-                        <h4>纯棉系列</h4>
+                        <h4 data-i18n="products.cotton">纯棉系列</h4>
                         <p>Pure Cotton</p>
                     </div>
                 </div>
@@ -137,7 +144,7 @@
                         <img src="images/纯棉系列.png" alt="亚麻系列">
                     </div>
                     <div class="product-info">
-                        <h4>亚麻系列</h4>
+                        <h4 data-i18n="products.linen">亚麻系列</h4>
                         <p>Linen</p>
                     </div>
                 </div>
@@ -146,7 +153,7 @@
                         <img src="images/纯棉系列.png" alt="弹力系列">
                     </div>
                     <div class="product-info">
-                        <h4>弹力系列</h4>
+                        <h4 data-i18n="products.stretch">弹力系列</h4>
                         <p>Stretch</p>
                     </div>
                 </div>
@@ -155,7 +162,7 @@
                         <img src="images/纯棉系列.png" alt="斜纹系列">
                     </div>
                     <div class="product-info">
-                        <h4>斜纹系列</h4>
+                        <h4 data-i18n="products.twill">斜纹系列</h4>
                         <p>Twill</p>
                     </div>
                 </div>
@@ -166,8 +173,8 @@
 
     <footer>
         <div class="footer-content">
-            <p>© 2026 米晴纺织 版权所有</p>
-            <p class="footer-tagline">匠心织造 · 面料世家</p>
+            <p data-i18n="footer.copyright">© 2026 米晴纺织 版权所有</p>
+            <p class="footer-tagline" data-i18n="footer.tagline">匠心织造 · 面料世家</p>
         </div>
     </footer>
 
@@ -178,15 +185,17 @@
                 <path d="M8.5 5C4.9 5 2 7.5 2 10.6c0 1.8 1 3.4 2.6 4.4l-.6 2 2.2-1.1c.6.1 1.2.2 1.8.2 3.6 0 6.5-2.5 6.5-5.6S12.1 5 8.5 5zm-1 7.5c-.4 0-.8-.3-.8-.8s.3-.8.8-.8.8.3.8.8-.4.8-.8.8zm3.5 0c-.4 0-.8-.3-.8-.8s.3-.8.8-.8.8.3.8.8-.4.8-.8.8z"/>
                 <path d="M21.5 13.2c0-2.8-2.6-5-5.8-5-3.5 0-6.3 2.5-6.3 5.6 0 3.1 2.8 5.6 6.3 5.6.5 0 1-.1 1.5-.2l1.8.9-.5-1.7c1.3-.9 2.1-2.3 2.1-3.9zm-7.5.3c-.3 0-.6-.3-.6-.6s.3-.6.6-.6.6.3.6.6-.3.6-.6.6zm3 0c-.3 0-.6-.3-.6-.6s.3-.6.6-.6.6.3.6.6-.3.6-.6.6z"/>
             </svg>
-            <span>添加微信</span>
+            <span data-i18n="wechat.button">添加微信</span>
         </button>
         <div class="wechat-qrcode">
             <div class="qrcode-content">
                 <img src="images/wechat-qr.png" alt="微信二维码" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect width=%22200%22 height=%22200%22 fill=%22%23f0f0f0%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23999%22 font-size=%2214%22%3E请上传二维码%3C/text%3E%3C/svg%3E'">
-                <p>扫码添加微信</p>
+                <p data-i18n="wechat.scan">扫码添加微信</p>
             </div>
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/i18next@23.7.6/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.4.2/i18nextHttpBackend.min.js"></script>
     <script src="script.js?v=2"></script></body>
 </html>

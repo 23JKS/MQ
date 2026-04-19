@@ -197,7 +197,8 @@ const initContactForm = () => {
     });
 };
 
-const init = () => {
+const init = async () => {
+    await initI18n();
     setActiveNavLink();
     initProductModal();
     initContactForm();
@@ -207,6 +208,7 @@ const init = () => {
     initWechatFloat();
     initProductsNav();
     initHeroSlider();
+    initLanguageSwitcher();
 };
 
 // 微信悬浮按钮交互
@@ -231,6 +233,92 @@ const initWechatFloat = () => {
 };
 
 document.addEventListener('DOMContentLoaded', init);
+
+
+// ================= 多语言支持 (i18next) =================
+
+// 初始化 i18next
+const initI18n = async () => {
+    // 检查 i18next 是否已加载
+    if (typeof i18next === 'undefined') {
+        console.error('i18next library not loaded');
+        return;
+    }
+
+    // 从 localStorage 获取保存的语言，默认为中文
+    const savedLang = localStorage.getItem('language') || 'zh';
+
+    await i18next
+        .use(i18nextHttpBackend)
+        .init({
+            lng: savedLang,
+            fallbackLng: 'zh',
+            debug: false,
+            backend: {
+                loadPath: 'lang/{{lng}}.json'
+            }
+        });
+
+    // 更新页面内容
+    updateContent();
+};
+
+// 更新页面内容
+const updateContent = () => {
+    // 更新所有带 data-i18n 属性的元素
+    selectAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        const translation = i18next.t(key);
+        
+        // 检查是否需要使用 HTML（用于包含 <br> 标签的内容）
+        if (element.hasAttribute('data-i18n-html')) {
+            element.innerHTML = translation;
+        } else {
+            element.textContent = translation;
+        }
+    });
+};
+
+// 初始化语言切换按钮
+const initLanguageSwitcher = () => {
+    const langButtons = selectAll('.lang-btn');
+    
+    if (langButtons.length === 0) return;
+    
+    // 设置当前激活的语言按钮
+    const currentLang = i18next.language || 'zh';
+    langButtons.forEach(btn => {
+        const lang = btn.getAttribute('data-lang');
+        if (lang === currentLang) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+    
+    // 添加点击事件
+    langButtons.forEach(btn => {
+        btn.addEventListener('click', async () => {
+            const lang = btn.getAttribute('data-lang');
+            
+            // 切换语言
+            await i18next.changeLanguage(lang);
+            
+            // 保存到 localStorage
+            localStorage.setItem('language', lang);
+            
+            // 更新按钮状态
+            langButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            // 更新页面内容
+            updateContent();
+            
+            // 更新 HTML lang 属性
+            document.documentElement.lang = lang === 'zh' ? 'zh-CN' : (lang === 'ja' ? 'ja-JP' : 'en-US');
+        });
+    });
+};
 
 
 // 产品中心导航交互

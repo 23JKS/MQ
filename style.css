@@ -1521,3 +1521,46 @@ footer::before {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* ================= 语言切换按钮 ================= */
+.lang-switcher {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.lang-btn {
+    padding: 6px 16px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'PingFang SC', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.lang-btn.active {
+    background: #ffffff;
+    color: #6b5d52;
+    font-weight: 500;
+}
+
+@media (max-width: 968px) {
+    .lang-switcher {
+        order: -1;
+        width: 100%;
+        justify-content: center;
+    }
+}

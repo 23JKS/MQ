@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Craftsmanship & Quality First",
+      "desc": "Over 20 years of expertise in textile fabrics for global brands"
+    },
+    "slide2": {
+      "title": "Diverse Selection",
+      "desc": "1000+ fabric styles to meet all your needs"
+    },
+    "slide3": {
+      "title": "Advanced Equipment",
+      "desc": "Modern production lines ensuring quality in every meter"
+    },
+    "slide4": {
+      "title": "Rich Colors",
+      "desc": "1000+ in-stock colors, fast delivery"
+    }
+  },
+  "brand": {
+    "label": "Brand Message",
+    "title": "Perfecting<br>Every Meter",
+    "desc1": "In the world of fashion, fabric is not just about appearance—it's the key to comfort, quality, and functionality.",
+    "desc2": "We are committed to creating premium, comfortable, and durable textile fabrics, offering diverse choices for global brands. From material selection to production, we strive to make every fabric the perfect partner for clothing."
+  },
+  "products": {
+    "label": "Products",
+    "desc": "Premium Fabrics",
+    "cotton": "Cotton Series",
+    "linen": "Linen Series",
+    "stretch": "Stretch Series",
+    "twill": "Twill Series"
+  },
+  "advantages": {
+    "label": "Advantages",
+    "desc": "Our Strengths",
+    "color": {
+      "title": "Colors",
+      "desc": "Choose from hundreds<br>of exclusive colors"
+    },
+    "quality": {
+      "title": "Quality",
+      "desc": "Perfecting every detail<br>for premium products"
+    },
+    "logistics": {
+      "title": "Logistics",
+      "desc": "Fast delivery<br>when you need it"
+    },
+    "service": {
+      "title": "Service",
+      "desc": "Immediate delivery<br>and lasting quality"
+    }
+  },
+  "stats": {
+    "founded": "Founded",
+    "styles": "Fabric Styles",
+    "colors": "Color Options",
+    "partners": "Brand Partners"
+  },
+  "footer": {
+    "copyright": "© 2026 MiQing Textile. All rights reserved.",
+    "tagline": "Craftsmanship · Fabric Excellence"
+  },
+  "wechat": {
+    "button": "Add WeChat",
+    "scan": "Scan to add WeChat"
+  }
+}
